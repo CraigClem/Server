@@ -18,7 +18,6 @@ class Project(models.Model):
         'jwt_auth.User',
         related_name='favorites',
         blank= True
-        ### ? no delete functionalities for many to many relationships
     )
     owner = models.ForeignKey(
         'jwt_auth.User',
